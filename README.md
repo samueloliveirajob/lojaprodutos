@@ -1,14 +1,13 @@
-# Portal Stelo
-
+# loja
 ##Sistema que compreende:
-- Posibilitar ao cliente interagir com a Stelo
+- Posibilitar ao cliente interagir com a loja de produtos
 
 ##Tecnologias utilizadas:
 - Spring 4
 - Spring-data
 - Hibernate
 - Jackson 2
-- Embedded Jetty 9 (br.com.stelo.portal.boot.Main.java)
+- Embedded Jetty 9 (br.com.loja de produtos.portal.boot.Main.java)
 
 ### Para os testes Unitarios
 - Junit
@@ -19,7 +18,7 @@
 - Spring-test
 
 ### Banco de dados
-O Banco de dados esta configurado no pacote [br.com.stelo.boot].
+O Banco de dados esta configurado no pacote [br.com.loja de produtos.boot].
 Foi utilizado um banco in-memory(hsqldb) para fins de teste e persistencia.
 
 
