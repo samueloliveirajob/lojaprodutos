@@ -1,0 +1,57 @@
+CREATE TABLE USR_CADU.TB_MAQ_CMPR 
+(
+  ID_MAQ_CMPR NUMBER(13) NOT NULL 
+, ID_STELO NUMBER(9) NOT NULL 
+, TP_MAQ NUMBER(4) NOT NULL 
+, TP_OPER NUMBER(4) NOT NULL 
+, QTDE NUMBER(9) NOT NULL 
+, DT_INCL DATE NOT NULL 
+, DT_CMPR_FIM DATE 
+, CONSTRAINT TB_MAQ_CMPR_PK PRIMARY KEY 
+  (
+    ID_MAQ_CMPR 
+  , ID_STELO 
+  )
+  ENABLE 
+);
+
+
+--------------------------------------------------------
+--  DDL for Sequence SQ_TB_MAQ_CMPR
+--------------------------------------------------------
+
+CREATE SEQUENCE  "USR_CADU"."SQ_TB_MAQ_CMPR"  MINVALUE 1 MAXVALUE 999999999999999 INCREMENT BY 1 START WITH 1 NOCACHE  NOORDER  NOCYCLE ;
+
+
+--------------------------------------------------------
+--  DDL for Table TB_CTRL_ENVIO
+--------------------------------------------------------
+   
+CREATE TABLE USR_CADU.TB_CTRL_ENVIO 
+(
+  ID_CTRL_ENVIO NUMBER(8) NOT NULL 
+, ID_CANAL_ORIGEM NUMBER(8) NOT NULL 
+, NOME VARCHAR2(250) NOT NULL 
+, ENCODE VARCHAR2(250) NOT NULL 
+, ID_AGENCIA VARCHAR2(250) 
+, ID_GERENTE VARCHAR2(250) 
+, ID_CENTRAL VARCHAR2(250) 
+, URL_COMPRA VARCHAR2(250) NOT NULL 
+, ID_TP_ENVIO NUMBER(8) NOT NULL 
+, QTDE_ENVIO NUMBER(8) NOT NULL 
+, DT_INCL DATE NOT NULL 
+, CONSTRAINT TB_CTRL_ENVIO_PK PRIMARY KEY 
+  (
+    ID_CTRL_ENVIO 
+  )
+  ENABLE 
+);
+
+--------------------------------------------------------
+--  DDL for Sequence SQ_TB_CTRL_ENVIO
+--------------------------------------------------------
+
+CREATE SEQUENCE USR_CADU.SQ_TB_CTRL_ENVIO INCREMENT BY 1 START WITH 1 MAXVALUE 999999999999999999 MINVALUE 1;
+
+
+   

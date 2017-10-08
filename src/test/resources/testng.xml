@@ -1,0 +1,32 @@
+<suite name="Suite" parallel="tests" >
+    <test name="Jetty">
+        <classes>
+            <class name="integration.JettyStarter"/>
+        </classes>
+    </test>
+
+    <test name="Chave">
+        <classes>
+            <class name="integration.ChaveSegurancaEndpointIT"/>
+        </classes>
+    </test>
+
+    <test name="Date">
+        <classes>
+            <class name="integration.VendaDateFiltersIT"/>
+        </classes>
+    </test>
+
+    <test name="Venda">
+        <classes>
+            <class name="integration.VendaEndpointIT"/>
+        </classes>
+    </test>
+
+    <test name="Filters">
+        <classes>
+            <class name="integration.VendaFiltersIT"/>
+        </classes>
+    </test>
+
+</suite>
